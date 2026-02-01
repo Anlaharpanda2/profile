@@ -8,14 +8,14 @@
   "theme_color": "#4F46E5",
   "icons": [
     {
-      "src": "/itsanla-logo.png",
+      "src": "/itsanla-logo.webp",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "/itsanla-logo.png",
+      "src": "/itsanla-logo.webp",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/webp"
     }
   ]
 }

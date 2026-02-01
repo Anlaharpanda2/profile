@@ -49,7 +49,7 @@ export default function ProjectDetail({ project }: ProjectDetailProps) {
         name={project.title}
         description={project.tagline}
         url={`https://www.linkedin.com/in/anlaharpanda/projects/${project.slug}`}
-        image={project.image ? project.image : "/pfp.jpeg"}
+        image={project.image ? project.image : "/pfp.webp"}
         author="Anla Harpanda"
         dateCreated={`${project.year}-01-01`}
         programmingLanguage={project.stack}

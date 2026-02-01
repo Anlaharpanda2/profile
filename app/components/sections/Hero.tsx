@@ -70,7 +70,7 @@ export default function Hero() {
         >
           <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-90 lg:h-120">
             <Image
-              src="/profile.png"
+              src="/profile.webp"
               alt="Anla Harpanda - Full Stack Web Developer"
               fill
               className="object-contain rounded-2xl"

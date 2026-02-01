@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.*
+
+# Build artifacts
+.next/
+.turbo/
+
+# Development
+.env*
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Documentation (optional - remove if you want these deployed)
+MIGRATION_SUMMARY.md
+CLOUDFLARE_DEPLOYMENT.md
+QUICK_REFERENCE.md
+
+# Lock files (not needed in deployment)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock

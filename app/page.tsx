@@ -29,7 +29,7 @@ export default function Home() {
         jobTitle="Full Stack Web Developer & UI/UX Designer"
         description="Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, Vue.js, and React. Based in Padang, Indonesia."
         url="https://anla.my.id"
-        image="https://anla.my.id/pfp.jpeg"
+        image="https://anla.my.id/pfp.webp"
         email="anlaharpanda@gmail.com"
         sameAs={[
           "https://www.linkedin.com/in/anlaharpanda",

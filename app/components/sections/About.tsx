@@ -66,7 +66,7 @@ export default function About() {
             transition={{ duration: 0.2, ease: "easeOut" }}
           >
             <Image
-              src="/pfp.jpeg"
+              src="/pfp.webp"
               alt="Anla Harpanda - Full Stack Web Developer and UI/UX Designer"
               width={128}
               height={128}

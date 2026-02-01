@@ -3,7 +3,6 @@ import { Roboto } from "next/font/google"
 import "./globals.css";
 import Script from "next/script";
 import { ThemeProvider } from "next-themes";
-import { Analytics } from "@vercel/analytics/next"
 import ChatWidget from "./components/chat/ChatWidget";
 
 const roboto = Roboto({
@@ -62,7 +61,7 @@ export const metadata: Metadata = {
     siteName: "Anla Harpanda - Web Developer Portfolio",
     images: [
       {
-        url: "/pfp.jpeg",
+        url: "/pfp.webp",
         width: 1200,
         height: 630,
         alt: "Anla Harpanda - Full Stack Web Developer Portfolio",
@@ -74,17 +73,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anla Harpanda | Full Stack Web Developer",
     description: "Full Stack Web Developer & UI/UX Designer. Building scalable web applications with modern technologies. AWS Certified.",
-    images: ["/pfp.jpeg"],
+    images: ["/pfp.webp"],
     creator: "@anlaharpanda",
   },
   icons: {
     icon: [
-      { url: "/itsanla-logo.png", type: "image/png" },
-      { url: "/itsanla-logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/itsanla-logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/itsanla-logo.webp", type: "image/webp" },
+      { url: "/itsanla-logo.webp", sizes: "32x32", type: "image/webp" },
+      { url: "/itsanla-logo.webp", sizes: "16x16", type: "image/webp" },
     ],
     apple: [
-      { url: "/itsanla-logo.png", sizes: "180x180", type: "image/png" },
+      { url: "/itsanla-logo.webp", sizes: "180x180", type: "image/webp" },
     ],
   },
 };
@@ -122,7 +121,7 @@ export default function RootLayout({
               name: "Anla Harpanda",
               alternateName: ["Anla", "itsanla", "anla.id"],
               url: "https://anla.my.id",
-              image: "https://anla.my.id/pfp.jpeg",
+              image: "https://anla.my.id/pfp.webp",
               jobTitle: "Full Stack Web Developer & UI/UX Designer",
               description: "Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, Vue.js, and React. Based in Padang, Indonesia.",
               sameAs: [
@@ -155,12 +154,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#2563eb" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="google-site-verification" content="your-google-verification-code" />
-        <link rel="icon" href="/itsanla-logo.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/itsanla-logo.png" />
+        <link rel="icon" href="/itsanla-logo.webp" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/itsanla-logo.webp" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://va.vercel-scripts.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 
 
@@ -177,7 +175,6 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        <Analytics />
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <ChatWidget />

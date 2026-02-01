@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const title = `${project.title} - ${project.tagline}`;
   const description = `${project.tagline} Built with ${project.stack.slice(0, 3).join(", ")}. ${project.problem.slice(0, 120)}...`;
-  const imageUrl = project.image ? project.image : "/pfp.jpeg";
+  const imageUrl = project.image ? project.image : "/pfp.webp";
 
   return {
     title,
