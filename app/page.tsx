@@ -10,11 +10,11 @@ import FixedSocialBar from '@/app/components/FixedSocialBar';
 import { PersonStructuredData, WebsiteStructuredData } from '@/app/components/StructuredData';
 
 export const metadata: Metadata = {
-  title: "Home | Anla Harpanda - Full Stack Web Developer",
+  title: "Anla Harpanda",
   description: "Welcome to my portfolio! I'm a Full Stack Web Developer & UI/UX Designer specializing in Express.js, Next.js, Laravel, Vue.js, and React. Based in Padang, Indonesia.",
   keywords: "full stack developer, web developer, UI/UX designer, Next.js, React, Vue.js, Laravel, Express.js, Anla Harpanda, Indonesia",
   openGraph: {
-    title: "Home | Anla Harpanda - Full Stack Web Developer",
+    title: "Anla Harpanda | Full Stack Web Developer & UI/UX Designer",
     description: "Welcome to my portfolio! I'm a Full Stack Web Developer & UI/UX Designer specializing in modern web technologies.",
     url: "https://anla.my.id",
     siteName: "Anla Harpanda Portfolio",
