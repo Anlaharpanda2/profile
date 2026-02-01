@@ -7,14 +7,6 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 15, 23, 42;
-    --background-end-rgb: 15, 23, 42;
-  }
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
@@ -60,4 +52,21 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.prose pre {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.prose pre code {
+  background-color: transparent !important;
+  color: #374151 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.7 !important;
+}
+
+.prose code {
+  font-weight: 400 !important;
 }
