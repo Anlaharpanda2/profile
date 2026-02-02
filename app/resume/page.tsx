@@ -81,13 +81,13 @@ export default function Resume() {
             </motion.div>
 
             {/* Download Resume */}
-            <Link
+            <a
               href="/CVPersonal.pdf"
               target="_blank"
               className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transition-all shadow"
             >
               Download PDF
-            </Link>
+            </a>
           </div>
 
           {/* Experience */}

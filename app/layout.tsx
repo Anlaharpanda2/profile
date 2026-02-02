@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google"
 import "./globals.css";
 import Script from "next/script";
@@ -9,6 +9,13 @@ const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
 })
+
+export const viewport: Viewport = {
+  themeColor: "#2563eb",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: {
@@ -86,6 +93,10 @@ export const metadata: Metadata = {
       { url: "/itsanla-logo.webp", sizes: "180x180", type: "image/webp" },
     ],
   },
+  verification: {
+    google: "your-google-verification-code",
+  },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
@@ -95,7 +106,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <head>
+      <body
+        suppressHydrationWarning
+        className={`${roboto.className} antialiased min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white`}
+      >
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -149,24 +163,6 @@ export default function RootLayout({
           }}
         />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="theme-color" content="#2563eb" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="google-site-verification" content="your-google-verification-code" />
-        <link rel="icon" href="/itsanla-logo.webp" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/itsanla-logo.webp" />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-
-
-      </head>
-      <body
-        suppressHydrationWarning
-        className={`${roboto.className}  antialiased min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white`}
-      >
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-NLQ7D3LQ"

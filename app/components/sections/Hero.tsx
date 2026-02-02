@@ -182,14 +182,14 @@ export default function Hero() {
               📄 Resume
             </Link>
 
-            <Link
+            <a
               href="/CVPersonal.pdf"
               download
               aria-label="Download CV PDF"
               className="flex items-center gap-1 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors border border-gray-300 dark:border-gray-600 rounded-md hover:border-blue-600 dark:hover:border-blue-400"
             >
               📥 Download CV
-            </Link>
+            </a>
           </div>
         </div>
       </div>
