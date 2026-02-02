@@ -120,9 +120,9 @@ export default function ProjectsIndex() {
 
           {/* Filter Buttons */}
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
               Filter by Technology
-            </h3>
+            </h2>
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setSelectedTech("All")}

@@ -136,7 +136,7 @@ export default function Footer() {
 
         {/* Trust Signal */}
         <p className="mt-6 text-center text-xs text-gray-500 dark:text-gray-600">
-          Built with Next.js, Tailwind, and ❤️. Deployed on Vercel
+          Built with Next.js, Tailwind, and ❤️. Deployed on Cloudflare Pages
         </p>
       </div>
     </footer>

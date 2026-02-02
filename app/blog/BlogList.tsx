@@ -105,7 +105,7 @@ export default function BlogList({ posts }: BlogListProps) {
             <button
               onClick={() => setSortOrder(sortOrder === 'newest' ? 'oldest' : 'newest')}
               className="px-3 py-2 border border-gray-200 rounded-md bg-white hover:bg-gray-50 transition-colors flex items-center gap-2 text-sm font-medium text-gray-700"
-              title={sortOrder === 'newest' ? 'Terbaru' : 'Terlama'}
+              aria-label={sortOrder === 'newest' ? 'Sort by oldest first' : 'Sort by newest first'}
             >
               {sortOrder === 'newest' ? '↓' : '↑'}
             </button>
@@ -116,11 +116,10 @@ export default function BlogList({ posts }: BlogListProps) {
               <button
                 key={tag}
                 onClick={() => setSelectedTag(tag)}
-                className={`px-3 py-1 text-sm font-medium rounded-md border transition-colors ${
-                  selectedTag === tag
-                    ? 'bg-blue-600 text-white border-blue-600'
-                    : 'bg-gray-100 text-gray-700 border-gray-200 hover:bg-gray-200'
-                }`}
+                className={`px-3 py-1 text-sm font-medium rounded-md border transition-colors ${selectedTag === tag
+                  ? 'bg-blue-600 text-white border-blue-600'
+                  : 'bg-gray-100 text-gray-700 border-gray-200 hover:bg-gray-200'
+                  }`}
               >
                 {tag} ({tagCounts[tag] || 0})
               </button>
@@ -138,9 +137,8 @@ export default function BlogList({ posts }: BlogListProps) {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className={`group block p-6 border-b border-gray-200 hover:bg-gray-50 transition-colors ${
-                  showRightBorder ? 'md:border-r border-gray-200' : ''
-                }`}
+                className={`group block p-6 border-b border-gray-200 hover:bg-gray-50 transition-colors ${showRightBorder ? 'md:border-r border-gray-200' : ''
+                  }`}
               >
                 {post.thumbnail && (
                   <div className="relative w-full h-48 mb-4 rounded-md overflow-hidden">
@@ -149,6 +147,7 @@ export default function BlogList({ posts }: BlogListProps) {
                       alt={post.title}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                 )}

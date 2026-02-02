@@ -1,9 +1,8 @@
 "use client";
-import { FaChess } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Github } from "lucide-react";
+import { Linkedin, Mail, Github, Crown } from "lucide-react";
 
 export default function About() {
   const skills = {
@@ -51,7 +50,7 @@ export default function About() {
             transition={{ duration: 0.5, ease: "easeInOut" }}
             className="inline-block cursor-help text-purple-600"
           >
-            <FaChess />
+            <Crown className="w-6 h-6" />
           </motion.span>
         </motion.h2>
 

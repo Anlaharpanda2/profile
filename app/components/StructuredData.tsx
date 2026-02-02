@@ -1,4 +1,4 @@
-"use client";
+// Server Component - renders static JSON-LD for SEO
 
 interface PersonStructuredDataProps {
   name: string;

@@ -2,8 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Linkedin, Mail, Github } from "lucide-react";
-import { FaChess } from "react-icons/fa6";
+import { Linkedin, Mail, Github, Crown } from "lucide-react";
 
 // Skill badges component for immediate display
 const SkillBadge = ({ skill, icon }: { skill: string; icon?: string }) => (
@@ -93,7 +92,7 @@ export default function Hero() {
               whileHover={{ rotate: [0, 15, -15, 0] }}
               transition={{ duration: 0.6 }}
             >
-              <FaChess className="text-purple-600" />
+              <Crown className="w-5 h-5 text-purple-600" />
             </motion.span>
           </h1>
 
