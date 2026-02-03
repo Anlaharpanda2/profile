@@ -109,13 +109,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
-      <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4348406121095343"
-          crossOrigin="anonymous"
-        ></script>
-      </head>
       <body
         suppressHydrationWarning
         className={`${roboto.className} antialiased min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white`}
@@ -132,6 +125,14 @@ export default function RootLayout({
               })(window,document,'script','dataLayer','GTM-NLQ7D3LQ');
             `,
           }}
+        />
+
+        {/* Google AdSense */}
+        <Script
+          id="adsbygoogle-init"
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4348406121095343"
+          crossOrigin="anonymous"
         />
 
         {/* Structured Data (JSON-LD) for SEO */}
