@@ -4,7 +4,6 @@ import "./globals.css";
 import Script from "next/script";
 import { ThemeProvider } from "next-themes";
 import ChatWidget from "./components/chat/ChatWidget";
-import GoogleAdsense from "@/components/GoogleAdsense";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -98,6 +97,9 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   manifest: "/manifest.json",
+  other: {
+    "google-adsense-account": "ca-pub-4348406121095343",
+  },
 };
 
 export default function RootLayout({
@@ -107,6 +109,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4348406121095343"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body
         suppressHydrationWarning
         className={`${roboto.className} antialiased min-h-screen bg-white text-black dark:bg-gray-900 dark:text-white`}
@@ -175,7 +184,6 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <ChatWidget />
-          <GoogleAdsense />
         </ThemeProvider>
       </body>
     </html>
