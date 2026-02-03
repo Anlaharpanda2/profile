@@ -130,7 +130,7 @@ export default function RootLayout({
         {/* Google AdSense */}
         <Script
           id="adsbygoogle-init"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4348406121095343"
           crossOrigin="anonymous"
         />
