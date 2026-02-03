@@ -21,10 +21,10 @@ export default function GoogleAdsense() {
         return null;
     }
 
-    // Only load AdSense on blog pages
-    if (!pathname.startsWith('/blog')) {
-        return null;
-    }
+    // // Only load AdSense on blog pages
+    // if (!pathname.startsWith('/blog')) {
+    //     return null;
+    // }
 
     return (
         <Script
