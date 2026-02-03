@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import { ThemeProvider } from "next-themes";
 import ChatWidget from "./components/chat/ChatWidget";
+import GoogleAdsense from "@/components/GoogleAdsense";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -174,6 +175,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <ChatWidget />
+          <GoogleAdsense />
         </ThemeProvider>
       </body>
     </html>
