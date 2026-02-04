@@ -1,4 +1,21 @@
+# Aturan untuk semua bot (Google, Bing, dll)
 User-agent: *
 Allow: /
+# Hemat Crawl Budget: Jangan biarkan bot masuk ke file sistem Next.js & API
+Disallow: /_next/
+Disallow: /api/
+Disallow: /admin/
 
+# (Opsional) Blokir AI Bot Nakal secara manual (Pengganti fitur Cloudflare)
+# Ini format standar yang dimengerti semua bot, tidak akan error di GSC.
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+# Peta Situs
 Sitemap: https://anla.my.id/sitemap.xml
