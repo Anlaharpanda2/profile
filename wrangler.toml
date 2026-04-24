@@ -1,6 +1,6 @@
-name = "anla-portfolio"
-compatibility_date = "2025-01-31"
+name = "anla-portfolio-v2"
+compatibility_date = "2026-04-23"
 pages_build_output_dir = "out"
 
 [env.production]
-name = "anla-portfolio"
+name = "anla-portfolio-v2"

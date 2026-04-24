@@ -2,3 +2,12 @@
   Content-Type: application/xml
   X-Content-Type-Options: nosniff
   Cache-Control: public, max-age=3600, s-maxage=3600
+
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+
+/login
+  X-Robots-Tag: noindex, nofollow
+
+/api/*
+  Cache-Control: no-store
