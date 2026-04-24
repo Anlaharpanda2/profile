@@ -10,7 +10,7 @@ async function fetchApi<T>(path: string): Promise<T | null> {
   const base = apiBase();
   if (!base) return null;
   try {
-    const res = await fetch(`${base}${path}`, { cache: "no-store" });
+    const res = await fetch(`${base}${path}`, { cache: "force-cache" });
     if (!res.ok) return null;
     return res.json() as Promise<T>;
   } catch {

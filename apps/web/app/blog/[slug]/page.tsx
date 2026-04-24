@@ -9,6 +9,8 @@ import RevealEffects from "@/components/ui/RevealEffects";
 import PageEffects from "@/components/ui/PageEffects";
 import { getAllPosts, getPostBySlug, formatDate } from "@/lib/data";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((p) => ({ slug: p.slug }));

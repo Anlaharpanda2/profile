@@ -8,6 +8,8 @@ import RevealEffects from "@/components/ui/RevealEffects";
 import PageEffects from "@/components/ui/PageEffects";
 import { getAllProjects, getProjectBySlug } from "@/lib/data";
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const projects = await getAllProjects();
   return projects.map((p) => ({ slug: p.slug }));
