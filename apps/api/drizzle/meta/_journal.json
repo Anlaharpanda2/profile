@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1777022081555,
-      "tag": "0000_tidy_ego",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1777022082000,
-      "tag": "0001_portfolio_schema",
+      "when": 1777024462611,
+      "tag": "0000_clean_lizard",
       "breakpoints": true
     }
   ]

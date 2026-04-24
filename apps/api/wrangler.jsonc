@@ -1,33 +1,35 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "api",
-  "main": "src/index.ts",
-  "compatibility_date": "2026-04-24",
-  "compatibility_flags": ["nodejs_compat"],
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "profile",
-      "database_id": "e1e7477a-0787-4fb8-a369-28e86a6bcf86",
-      "migrations_dir": "drizzle"
-    }
-  ],
-  "r2_buckets": [
-    {
-      "binding": "BUCKET",
-      "bucket_name": "portfolio-assets",
-      "preview_bucket_name": "portfolio-assets-dev"
-    }
-  ]
-  // Secrets — set via: wrangler secret put SESSION_SECRET
-  // Or in Cloudflare Dashboard → Worker → Settings → Variables (encrypted)
-  //
-  // SESSION_SECRET = <random 32+ char string>
-  // FRONTEND_URL   = https://anla.my.id
-  // R2_PUBLIC_URL  = https://assets.anla.my.id
-  //
-  // Local dev — create apps/api/.dev.vars:
-  //   SESSION_SECRET=any-local-secret
-  //   FRONTEND_URL=http://localhost:3000
-  //   R2_PUBLIC_URL=http://localhost:8788
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "api",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-04-24",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "profile",
+			"database_id": "e1e7477a-0787-4fb8-a369-28e86a6bcf86",
+			"migrations_dir": "drizzle"
+		}
+	],
+	"r2_buckets": [
+		{
+			"binding": "BUCKET",
+			"bucket_name": "blog",
+			"preview_bucket_name": "portfolio-assets-dev"
+		}
+	]
+	// Secrets — set via: wrangler secret put SESSION_SECRET
+	// Or in Cloudflare Dashboard → Worker → Settings → Variables (encrypted)
+	//
+	// SESSION_SECRET = <random 32+ char string>
+	// FRONTEND_URL   = https://anla.my.id
+	// R2_PUBLIC_URL  = https://assets.anla.my.id
+	//
+	// Local dev — create apps/api/.dev.vars:
+	//   SESSION_SECRET=any-local-secret
+	//   FRONTEND_URL=http://localhost:3000
+	//   R2_PUBLIC_URL=http://localhost:8788
 }
