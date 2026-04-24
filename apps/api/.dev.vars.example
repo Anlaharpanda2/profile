@@ -1,0 +1,5 @@
+# Local dev environment variables for wrangler dev
+# Copy this file to .dev.vars and fill in values
+SESSION_SECRET=dev-secret-at-least-32-characters-long
+FRONTEND_URL=http://localhost:3000
+R2_PUBLIC_URL=http://localhost:8787

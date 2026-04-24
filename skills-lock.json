@@ -1,10 +1,10 @@
 {
   "version": 1,
   "skills": {
-    "seo-audit": {
-      "source": "coreyhaines31/marketingskills",
+    "hono": {
+      "source": "yusukebe/hono-skill",
       "sourceType": "github",
-      "computedHash": "ddd028951738fcbcdebf0f9bd90b708c55d1b9370a31603e0c13e5b262d8b8bb"
+      "computedHash": "220e5e1b12bbaeec49ec362b6e2262d77632d0536e9758bba9acbbc323fef990"
     }
   }
 }
