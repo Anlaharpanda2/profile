@@ -21,15 +21,33 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return { title: "Article not found" };
+  const url = `https://anla.my.id/blog/${slug}`;
+  const images = post.thumbnail
+    ? [{ url: post.thumbnail, width: 1200, height: 630, alt: post.title }]
+    : [{ url: "https://anla.my.id/profile.webp", width: 1200, height: 630, alt: post.title }];
   return {
     title: post.title,
     description: post.description,
+    keywords: post.tags,
+    authors: [{ name: "Anla Harpanda", url: "https://anla.my.id" }],
+    alternates: { canonical: url },
     openGraph: {
+      type: "article",
+      url,
       title: post.title,
       description: post.description,
-      images: post.thumbnail ? [post.thumbnail] : undefined,
-      type: "article",
+      images,
       publishedTime: post.date,
+      authors: ["Anla Harpanda"],
+      tags: post.tags,
+      siteName: "Anla Harpanda",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.description,
+      images: [images[0].url],
+      creator: "@itsanla",
     },
   };
 }

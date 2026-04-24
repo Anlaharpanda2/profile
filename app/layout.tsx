@@ -29,15 +29,61 @@ export const metadata: Metadata = {
   },
   description:
     "Full Stack Web Developer & UI/UX Designer specializing in Next.js, Express.js, Laravel, Vue.js, and React. Based in Padang, Indonesia.",
-  authors: [{ name: "Anla Harpanda" }],
-  alternates: { canonical: "/" },
+  keywords: [
+    "Anla Harpanda",
+    "Full Stack Developer",
+    "UI/UX Designer",
+    "Next.js",
+    "Express.js",
+    "Laravel",
+    "Vue.js",
+    "React",
+    "TypeScript",
+    "Web Developer Indonesia",
+    "Padang",
+    "Politeknik Negeri Padang",
+    "AWS",
+    "Docker",
+    "Kubernetes",
+  ],
+  authors: [{ name: "Anla Harpanda", url: "https://anla.my.id" }],
+  creator: "Anla Harpanda",
+  alternates: { canonical: "https://anla.my.id" },
   openGraph: {
     type: "website",
     url: "https://anla.my.id",
     siteName: "Anla Harpanda",
+    locale: "id_ID",
     title: "Anla Harpanda — Full Stack Developer & UI/UX Designer",
     description:
       "Building scalable web applications and user-centered experiences — from infrastructure to interface.",
+    images: [
+      {
+        url: "https://anla.my.id/profile.webp",
+        width: 1200,
+        height: 630,
+        alt: "Anla Harpanda — Full Stack Developer & UI/UX Designer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Anla Harpanda — Full Stack Developer & UI/UX Designer",
+    description:
+      "Building scalable web applications and user-centered experiences — from infrastructure to interface.",
+    images: ["https://anla.my.id/profile.webp"],
+    creator: "@itsanla",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   icons: {
     icon: [{ url: "/itsanla-logo.webp", type: "image/webp" }],

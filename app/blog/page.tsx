@@ -11,6 +11,22 @@ import { getAllPosts } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Blog",
   description: "Thoughts on AI, web development, and the tech industry.",
+  alternates: { canonical: "https://anla.my.id/blog" },
+  openGraph: {
+    type: "website",
+    url: "https://anla.my.id/blog",
+    title: "Blog | Anla Harpanda",
+    description: "Thoughts on AI, web development, and the tech industry.",
+    siteName: "Anla Harpanda",
+    images: [{ url: "https://anla.my.id/profile.webp", width: 1200, height: 630, alt: "Anla Harpanda Blog" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Anla Harpanda",
+    description: "Thoughts on AI, web development, and the tech industry.",
+    images: ["https://anla.my.id/profile.webp"],
+    creator: "@itsanla",
+  },
 };
 
 export default function BlogPage() {

@@ -12,6 +12,24 @@ export const metadata: Metadata = {
   title: "Projects",
   description:
     "Case studies of projects across full-stack, backend, DevOps, and AI development.",
+  alternates: { canonical: "https://anla.my.id/projects" },
+  openGraph: {
+    type: "website",
+    url: "https://anla.my.id/projects",
+    title: "Projects | Anla Harpanda",
+    description:
+      "Case studies of projects across full-stack, backend, DevOps, and AI development.",
+    siteName: "Anla Harpanda",
+    images: [{ url: "https://anla.my.id/profile.webp", width: 1200, height: 630, alt: "Anla Harpanda Projects" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects | Anla Harpanda",
+    description:
+      "Case studies of projects across full-stack, backend, DevOps, and AI development.",
+    images: ["https://anla.my.id/profile.webp"],
+    creator: "@itsanla",
+  },
 };
 
 export default function ProjectsPage() {

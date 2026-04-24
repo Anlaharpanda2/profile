@@ -20,9 +20,31 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return { title: "Project not found" };
+  const url = `https://anla.my.id/projects/${slug}`;
+  const imageUrl = project.image?.startsWith("http")
+    ? project.image
+    : `https://anla.my.id${project.image}`;
   return {
     title: project.title,
-    description: project.tagline,
+    description: project.problem,
+    keywords: project.stack,
+    authors: [{ name: "Anla Harpanda", url: "https://anla.my.id" }],
+    alternates: { canonical: url },
+    openGraph: {
+      type: "website",
+      url,
+      title: `${project.title} — ${project.tagline}`,
+      description: project.problem,
+      images: [{ url: imageUrl, width: 1200, height: 630, alt: project.title }],
+      siteName: "Anla Harpanda",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} — ${project.tagline}`,
+      description: project.problem,
+      images: [imageUrl],
+      creator: "@itsanla",
+    },
   };
 }
 
